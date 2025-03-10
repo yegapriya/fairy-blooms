@@ -63,7 +63,7 @@ body{
     animation: typing 4s steps(40, end) forwards, blink 0.7s infinite;
 }
 .about  {
-    margin-top: 50px;
+  
     display: flex;
   flex-direction: column;
     text-align: center;
@@ -71,10 +71,11 @@ body{
     align-content: center;
     text-align: center;
     }
-.about h2,.contact h2{
+.about h2,.contact h2,.gallery h2{
    text-align: center;
     color: black;
     font-family: cinzel;
+    margin-top: 50px;
     
 }
 .about p{
@@ -86,8 +87,18 @@ body{
     border-radius: 10px; 
     margin: auto;
 }
+.img-container{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.img-container img{
+    margin: 5px 20px;
+    width: 300px;
+    height: 300px;
+}
 .contact {
-    margin: 50px;
+    margin-bottom: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -125,7 +136,9 @@ input ,textarea{
     border-color: #fb00c1;
    }
 
-
+   .sub-but:hover{
+    background-color: #a85b8c;
+}
 
 
 @keyframes typing {
